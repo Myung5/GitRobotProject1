@@ -45,7 +45,8 @@ SampleLoginTest
     #Input Password    id=txtPassword    &{LOGINDATA}[password]    
     #Click Button    id=btnLogin 
     Click Element    id=welcome      
-    Click Link    link=Logout
+    #Click Link    link=Logout
+    Click Link    xpath=//a[@href="/index.php/auth/logout"]
     Close Browser
     Log    Test completed  
     Log    This test was executed by %{USERNAME} on %{os}
